@@ -63,12 +63,36 @@ public class Comercio02 {
                 }else{
                     if(productividad >= 200){
                         bono = 200;
-                    }
+                     }else{
+                           bono = 300;
+                    
+                    
                 }
             }
         }
-        
-       
+        if (region. equals ("Sierra")){
+            porcentajeSeguro = 10; // 10%
+            }else{
+            if(region. equals ("Costa")){
+                porcentajeSeguro = 12; // 12%
+            }else{
+                if(region. equals ("Oriente")){
+                porcentajeSeguro = 15; // 15%
+            }else{
+                if(region. equals ("Oriente")){
+                porcentajeSeguro = 15; // 15%
+            }else{
+                if(region. equals ("Insular")){
+                porcentajeSeguro = 30; // 30%}
+                
+            }else{
+                 porcentaje seguro: //Es para darle valor a una variable sin el dato asiganado
+                 
+                }
+              
+                }
+        }
+      
         adicionalSeguro = (sueldoBasico * porcentajeSeguro)/100;
         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
         
@@ -96,3 +120,9 @@ public class Comercio02 {
     }
     
 }
+
+/*
+De acuerdo a nueva normativa el porcentaje del seguro es variable si el empleado
+es de la sierra el porcentaje es de 10%, de la costa el 12%, del oriente el 15%
+acoplar la solucion para la nueva normativa.
+*/
