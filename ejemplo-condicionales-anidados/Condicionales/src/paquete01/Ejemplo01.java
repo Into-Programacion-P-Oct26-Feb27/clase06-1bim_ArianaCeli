@@ -22,17 +22,17 @@ public class Ejemplo01 {
                 + "1. AND\n"
                 + "2. OR\n"
                 + "3. NOT");
-        opcion = entrada.nextInt();
+        opcion = entrada.nextInt(); //3
         
-        if (opcion > 0 && opcion <= 3) {
-            if (opcion==1) {
+        if (opcion > 0 && opcion <= 3) { // 3>0 && 3 <=3 >> true && true >> true
+            if (opcion==1) { //3 == 1 >> falso
                 System.out.printf("%s\n", "Trabajar con AND");
                 
             }else{
-                if (opcion==2) {
+                if (opcion==2) { // 3 ==2 >> falso
                     System.out.printf("%s\n", "Trabajar con OR");
                 }else{
-                    // se asume opción = 3
+                    // se asume opción = 3 
                     // sería con NOT
                     System.out.printf("%s\n", "Trabajar con NOT");
                 }
@@ -44,3 +44,8 @@ public class Ejemplo01 {
     }
 
 }
+
+
+/*
+Usuario trabaja con la opcion 1
+*/
